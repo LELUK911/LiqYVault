@@ -25,10 +25,9 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY]
     },
     mantle: {
-      url: "https://rpc.mantle.xyz",
+      url: "https://mantle-mainnet.g.alchemy.com/v2/psdxQHy-ox6KOAzgtKoodvawJ0lL7tHg",
       chainId: 5000,
       accounts: [process.env.PRIVATE_KEY],
-      gasPrice : 200000
     },
   },
   etherscan: {
