@@ -25,7 +25,7 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY]
     },
     mantle: {
-      url: "https://mantle-mainnet.g.alchemy.com/v2/psdxQHy-ox6KOAzgtKoodvawJ0lL7tHg",
+      url: "https://rpc.mantle.xyz",
       chainId: 5000,
       accounts: [process.env.PRIVATE_KEY],
     },

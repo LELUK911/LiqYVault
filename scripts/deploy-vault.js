@@ -1,3 +1,4 @@
+const { ethers } = require("hardhat");
 
 async function main() {
     const [deployer] = await ethers.getSigners();
@@ -7,7 +8,9 @@ async function main() {
 
 
     const vault = await Vault.connect(deployer).deploy({
-        gasLimit: 30000000
+        gasLimit: 30000000,
+        maxFeePerGas: ethers.parseUnits('400', 'gwei'),
+        maxPriorityFeePerGas: ethers.parseUnits('0', 'gwei'),
     });
 
 
